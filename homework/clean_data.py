@@ -1,4 +1,4 @@
-"""Taller evaluable presencial"""
+#"""Taller evaluable presencial"""
 
 import pandas as pd  # type: ignore
 
@@ -16,7 +16,6 @@ def load_data(input_file):
 def create_key(df, n):
     """Cree una nueva columna en el DataFrame que contenga el key de la
     columna 'text'"""
--
     df = df.copy()
     df["key"] = df["raw_text"]
     df["key"] = df["key"].str.strip()
@@ -90,3 +89,6 @@ if __name__ == "__main__":
         input_file="files/input.txt",
         output_file="files/output.txt",
     )
+    
+    
+  
